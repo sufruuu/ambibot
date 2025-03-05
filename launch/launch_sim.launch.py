@@ -44,4 +44,8 @@ def generate_launch_description():
         rsp,
         gazebo,
         spawn_entity,
+<<<<<<< HEAD
     ])
+=======
+    ])
+>>>>>>> 4850b517a346bb38a1e334b50f5ddc5cb98ba943
