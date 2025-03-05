@@ -3,19 +3,11 @@
 
     <joint name="laser_joint" type="fixed">
         <parent link="chassis"/>
-<<<<<<< HEAD
         <child link="laser"/>
         <origin xyz="0.1 0 0.175" rpy="0 0 0"/>
     </joint>
 
     <link name="laser">
-=======
-        <child link="laser_frame"/>
-        <origin xyz="0.1 0 0.175" rpy="0 0 0"/>
-    </joint>
-
-    <link name="laser_frame">
->>>>>>> 4850b517a346bb38a1e334b50f5ddc5cb98ba943
         <visual>
             <geometry>
                 <cylinder radius="0.05" length="0.04"/>
@@ -34,11 +26,7 @@
 
 
 
-<<<<<<< HEAD
     <gazebo reference="laser">
-=======
-    <gazebo reference="laser_frame">
->>>>>>> 4850b517a346bb38a1e334b50f5ddc5cb98ba943
         <material>Gazebo/Red</material>
 
         <sensor name="laser" type="ray">
@@ -63,11 +51,7 @@
                     <argument>~/out:=scan</argument>
                 </ros>
                 <output_type>sensor_msgs/LaserScan</output_type>
-<<<<<<< HEAD
                 <frame_name>laser</frame_name>
-=======
-                <frame_name>laser_frame</frame_name>
->>>>>>> 4850b517a346bb38a1e334b50f5ddc5cb98ba943
             </plugin>
         </sensor>
     </gazebo>
